@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #f5f7fb;
+  background: linear-gradient(180deg, #f8fafc, #e2e8f0);
   color: #1f2937;
   line-height: 1.6;
 }
@@ -17,15 +17,35 @@ body {
 }
 
 .topbar {
-  background: #0f172a;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
   color: white;
-  padding: 3rem 0;
+  padding: 4rem 0 3rem;
   text-align: center;
 }
 
+.topbar .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  margin-bottom: 1rem;
+}
+
 .topbar h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 0.5rem;
+}
+
+.topbar p {
+  color: #dbeafe;
 }
 
 main {
@@ -35,8 +55,8 @@ main {
 .card,
 .link-card {
   background: white;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
 .intro {
@@ -60,8 +80,8 @@ main {
 }
 
 .link-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
 }
 
 .link-card h3 {
@@ -74,8 +94,7 @@ main {
 }
 
 .footer {
-  border-top: 1px solid #e5e7eb;
-  padding: 1.25rem 0;
   text-align: center;
-  color: #6b7280;
+  padding: 1.5rem 0 2rem;
+  color: #64748b;
 }
