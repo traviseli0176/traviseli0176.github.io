@@ -23,22 +23,6 @@ body {
   text-align: center;
 }
 
-.topbar .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.profile-pic {
-  width: 140px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  margin-bottom: 1rem;
-}
-
 .topbar h1 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 0.5rem;
@@ -62,6 +46,26 @@ main {
 .intro {
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.intro h2 {
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+.contact-line {
+  margin-top: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.contact-line a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+.contact-line a:hover {
+  text-decoration: underline;
 }
 
 .links-grid {
